@@ -5,46 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>trabalho</title>
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo[1].css">
 </head>
 <body>
+    
     <header>Trabalho de Autoria web</header>
     <h1>----------Cadastre-se-----------</h1>
 
     <form action="/enviar-dados" method="POST" >
-        <!-- Nome -->
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required class="nom"><br><br>
+        
+        <div class="name">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required class="nom">
+        </div>
 
-        <!-- E-mail -->
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required><br><br>
+       <div class="email">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+       </div>
+     
 
-        <!-- Senha -->
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required><br><br>
+        <div class="senha">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+        </div>
+       
 
-        <!-- Data de Nascimento -->
-        <label for="data_nascimento">Data de Nascimento:</label>
-        <input type="date" id="data_nascimento" name="data_nascimento"><br><br>
+       <div class="data_nasc">
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento">
+       </div>
+      
+        <div class="genero">
+            <label for="genero">Gênero:</label>
+        </div>
+       
 
-        <!-- Gênero -->
-        <label for="genero">Gênero:</label><br>
+        <div class="masculino">
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+        </div>
+        
 
-        <input type="radio" id="masculino" name="genero" value="masculino">
-        <label for="masculino">Masculino</label><br>
-
-        <input type="radio" id="feminino" name="genero" value="feminino">
-        <label for="feminino">Feminino</label><br><br>
-
+        <div class="feminino">
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino">Feminino</label>
+        </div>
+       
         
         
-        <!-- Mensagem -->
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+       <div class="mensagem">
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+        </div>
+       
+      
+      <button type="submit">Enviar</button >
 
-        <!-- Botão de envio -->
-        <button type="submit">Enviar</button>
+
     </form>
     <img src="feature-image.webp" alt="" >
     <a href="segundaPagina.html" target="_self">segunda pagina</a>
@@ -53,6 +71,5 @@
         <h5>Contibuintes:</h5>
         <p>Renan mendonça, Ryan Joseph e Ariel Franklen</p>
     </footer>
-
 </body>
 </html>

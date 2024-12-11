@@ -4,9 +4,9 @@ const toggleButton = document.getElementById('toggleSenha');
 toggleButton.addEventListener('click', function () {
     if (senhaInput.type === 'password') {
         senhaInput.type = 'text';
-        toggleButton.textContent = 'Ocultar Senha';
+        toggleButton.innerHTML = '<i class="fas fa-eye-slash"></i>'; 
     } else {
         senhaInput.type = 'password';
-        toggleButton.textContent = 'Mostrar Senha';
+        toggleButton.innerHTML = '<i class="fas fa-eye"></i>'; 
     }
 });

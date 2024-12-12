@@ -3,83 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>trabalho</title>
+    <title>Trabalho</title>
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="estilo[1].css">
-    
+    <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
-    
-    <header>Trabalho de Autoria web</header>
-    <h1>----------Cadastre-se-----------</h1>
+    <header>Trabalho de Autoria Web</header>
+    <h1>---------- Cadastre-se -----------</h1>
 
-    <form action="/enviar-dados" method="POST">
-        
-        
-        <div class="name">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required class="nom">
-        </div>
+    <div class="container">
+        <form action="segundaPagina.html" method="GET">
+            
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required class="nom">
+            </div>
 
-        <div class="email">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-     
+            <div class="input-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-        <div class="senha">
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required>
-            <span id="toggleSenha" class="eye-icon">
-                <i class="fas fa-eye"></i>
-            </span>
-        </div>
-       
+            <div class="input-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                <span id="mostrar_senha" class="olho">
+                    <i class="fas fa-eye"></i>
+                </span>
+            </div>
 
-        <div class="data_nasc">
-            <label for="data_nascimento">Data de Nascimento:</label>
-            <input type="date" id="data_nascimento" name="data_nascimento">
-        </div>
-      
-        <div class="genero">
-            <label for="genero">Gênero:</label>
-        </div>
-       
+            <div class="input-group">
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento">
+            </div>
 
-        <div class="masculino">
-            <input type="radio" id="masculino" name="genero" value="masculino">
-            <label for="masculino">Masculino</label>
-        </div>
-        
+            <div class="input-group genero-group">
+                <label for="genero">Gênero:</label><br>
+                <div class="radio-group">
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label for="feminino">Feminino</label>
+                </div>
+            </div>
 
-        <div class="feminino">
-            <input type="radio" id="feminino" name="genero" value="feminino">
-            <label for="feminino">Feminino</label>
-        </div>
-       
-        
-        
-        <div class="mensagem">
-            <label for="mensagem">Mensagem:</label><br>
-            <textarea id="mensagem" name="mensagem" rows="4" cols="50"> </textarea><br><br>
-        </div>
-       
-      
-        <button type="submit">Enviar</button >
+            <!-- <div class="input-group">
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+            </div>-->
 
+            <div class="input-group">
+                <label for="redes_sociais">Redes Sociais:</label>
+                <input type="url" id="redes_sociais" name="redes_sociais" placeholder="URL da sua rede social">
+            </div>
 
-    </form>
-    <img src="feature-image.webp" alt="" >
-    
-    <nav class="links">
-        <a href="segundaPagina.html" target="_self" >segunda pagina</a>
-    </nav>
-    
+            <div class="input-group">
+                <label for="matricula">Matrícula:</label>
+                <input type="number" id="matricula" name="matricula" placeholder="Ex.: 202411140100...">
+            </div>
+
+            <div class="input-group">
+                <label for="campus">Campus:</label>
+                <select id="campus" name="campus">
+                    <option value="Apodi">Apodi</option>
+                    <option value="Caicó">Caicó</option>
+                    <option value="Canguaretama">Canguaretama</option>
+                    <option value="Ceará-Mirim">Ceará-Mirim</option>
+                    <option value="Currais Novos">Currais Novos</option>
+                    <option value="Ipanguaçu">Ipanguaçu</option>
+                    <option value="João Câmara">João Câmara</option>
+                    <option value="Jucurutu">Jucurutu</option>
+                    <option value="Lajes">Lajes</option>
+                    <option value="Macau">Macau</option>
+                    <option value="Mossoró">Mossoró</option>
+                    <option value="Natal-Central">Natal-Central</option>
+                    <option value="Natal-Cidade Alta">Natal-Cidade Alta</option>
+                    <option value="Natal-Zona Leste">Natal-Zona Leste</option>
+                    <option value="Natal-Zona Norte">Natal-Zona Norte</option>
+                    <option value="Nova Cruz">Nova Cruz</option>
+                    <option value="Parelhas">Parelhas</option>
+                    <option value="Parnamirim">Parnamirim</option>
+                    <option value="Pau dos Ferros">Pau dos Ferros</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="São Gonçalo do Amarante">São Gonçalo do Amarante</option>
+                    <option value="São Paulo do Potengi">São Paulo do Potengi</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Temas de Interesse:</label><br><br>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="tecnologia" name="temas" value="tecnologia">
+                    <label for="tecnologia">Tecnologia</label>
+
+                    <input type="checkbox" id="ciencia" name="temas" value="ciencia">
+                    <label for="ciencia">Ciência</label>
+
+                    <input type="checkbox" id="portugues" name="temas" value="portugues">
+                    <label for="portugues">Português</label>
+                </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 
     <footer>
-        <h5>Contibuintes:</h5>
+        <h5>Contribuintes:</h5>
         <p>Renan Mendonça, Ryan Joseph e Ariel Franklen</p>
     </footer>
 </body>

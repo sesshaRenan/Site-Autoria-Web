@@ -1,12 +1,11 @@
-const senhaInput = document.getElementById('senha');
-const toggleButton = document.getElementById('toggleSenha');
-
-toggleButton.addEventListener('click', function () {
-    if (senhaInput.type === 'password') {
-        senhaInput.type = 'text';
-        toggleButton.innerHTML = '<i class="fas fa-eye-slash"></i>'; 
+function mostrar() {
+    if (senha.type === "password") {
+        senha.setAttribute("type", "text");
+        mostrar_senha.innerHTML = '<i class="fas fa-eye-slash"></i>';
     } else {
-        senhaInput.type = 'password';
-        toggleButton.innerHTML = '<i class="fas fa-eye"></i>'; 
+        senha.setAttribute("type", "password");
+        mostrar_senha.innerHTML = '<i class="fas fa-eye"></i>';
     }
-});
+}
+
+mostrar_senha.addEventListener("click", mostrar);

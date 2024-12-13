@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalho</title>
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo-html.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>Trabalho de Autoria Web</header>
-    <h1>---------- Cadastre-se -----------</h1>
+    <header>
+        <h1>Trabalho de Autoria Web</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <h1>Cadastre-se</h1>
 
     <div class="container">
-        <form action="segundaPagina.html" method="GET">
+        <form action="dados.php" method="POST">
             
             <div class="input-group">
                 <label for="nome">Nome:</label>
@@ -47,11 +57,6 @@
                     <label for="feminino">Feminino</label>
                 </div>
             </div>
-
-            <!-- <div class="input-group">
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
-            </div>-->
 
             <div class="input-group">
                 <label for="redes_sociais">Redes Sociais:</label>
@@ -106,12 +111,16 @@
             </div>
 
             <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
         </form>
     </div>
 
-    <footer>
-        <h5>Contribuintes:</h5>
-        <p>Renan Mendonça, Ryan Joseph e Ariel Franklen</p>
+    <footer class="footer">
+        <p>IFRN Campus Santa Cruz</p>
+        <p>Trabalho de Autoria Web</p>
+        <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+        <p>Componentes do grupo: Arial Fraklen, Renan Mendonça, Ryan Joseph</p>
     </footer>
+    
 </body>
 </html>

@@ -81,6 +81,13 @@
         position: relative;
         padding-right: 30px;
     }
+    .input-group input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 14px;
+    }
 
     .input-group .olho {
         position: absolute;
@@ -91,8 +98,7 @@
         z-index: 1;
     }
 
-    /* Centraliza as opções de gênero e checkboxes */
-    .radio-group, .checkbox-group {
+    .radio-group {
         display: flex;
         flex-direction: column; /* Organiza as opções uma abaixo da outra */
         align-items: center; /* Centraliza as opções */
@@ -100,13 +106,8 @@
         margin-top: 5px;
     }
 
-    /* Estilo para os itens individuais dentro dos grupos de rádio e checkbox */
-    .radio-group input, .checkbox-group input {
+    .radio-group input{
         margin-right: 10px; /* Espaço entre a caixa de seleção e o label */
-    }
-
-    .checkbox-group input[type="checkbox"], .radio-group input[type="radio"] {
-        margin-bottom: 8px; /* Proporciona o espaçamento entre as opções */
     }
 
     button {
@@ -199,11 +200,10 @@
         text-decoration: underline;
     }
     .footer {
-        background-color: #f4f4f4; /* Cor de fundo suave */
-        color: #333; /* Cor do texto */
-        text-align: center; /* Centraliza o texto */
-        padding: 20px; /* Espaçamento interno */
-        font-family: Arial, sans-serif; /* Fonte limpa e legível */
-        font-size: 14px; /* Tamanho do texto */
-        border-top: 2px solid #ccc; /* Linha de separação no topo */
-    }
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: bold;
+}

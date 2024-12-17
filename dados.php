@@ -1,6 +1,5 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Obtém os valores do formulário e os sanitiza
     $nome = isset($_POST['nome']) ? htmlspecialchars($_POST['nome']) : 'Não informado';
     $email = isset($_POST['email']) ? htmlspecialchars($_POST['email']) : 'Não informado';
     $senha = isset($_POST['senha']) ? htmlspecialchars($_POST['senha']) : 'Não informado';
@@ -37,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </ul>
     </nav>
     <h1>Detalhes do Cadastro</h2>
-    <!-- Conteúdo Principal -->
+    
     <main class="container">
         <p><strong>Nome:</strong> <?php echo $nome; ?></p>
         <p><strong>E-mail:</strong> <?php echo $email; ?></p>
@@ -50,7 +49,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <p><strong>Temas de Interesse:</strong> <?php echo $telefone; ?></p>
     </main>
 
-    <!-- Rodapé -->
     <footer>
         <p>IFRN Campus Santa Cruz</p>
         <p>Trabalho de Autoria Web</p>
